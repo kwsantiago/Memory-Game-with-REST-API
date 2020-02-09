@@ -1,6 +1,8 @@
 extends layout
-block content  
-    div
+
+block content   
+
+    .container-fluid
         form(method="GET")
         select(id="selectGameSize" class="form-control" onchange="newGame()")
             option(value="0") New Game
@@ -8,5 +10,5 @@ block content
             option(value="4") 4 Matches
             option(value="6") 6 Matches
             option(value="8") 8 Matches         
-        #game-board
+        #game-board.row-fluid 
             script restoreGame();
