@@ -1,5 +1,12 @@
 extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+block content  
+    div
+        form(method="GET")
+        select(id="selectGameSize" class="form-control" onchange="newGame()")
+            option(value="0") New Game
+            option(value="2") 2 Matches
+            option(value="4") 4 Matches
+            option(value="6") 6 Matches
+            option(value="8") 8 Matches         
+        #game-board
+            script restoreGame();
