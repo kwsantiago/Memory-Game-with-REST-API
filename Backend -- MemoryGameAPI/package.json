@@ -20,7 +20,7 @@
         "swagmock": "~1.0.0"
     },
     "devDependencies": {
-        "eslint": "^6",
+        "eslint": "^4",
         "tape": "^4",
         "istanbul": "~0.4.5",
         "is-my-json-valid": "^2.20.0",
