@@ -1,0 +1,41 @@
+{
+    "name": "memory-game-server",
+    "description": "",
+    "version": "1.0.0",
+    "author": "Kyle <kwsantiago@protonmail.com>",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/kwsantiago/memory-game-server.git"
+    },
+    "bugs": "http://github.com/kwsantiago/memory-game-server/issues",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "swaggerize-express": "^4.0.5",
+        "swaggerize-ui": "^1.0.1",
+        "swagmock": "~1.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^6",
+        "tape": "^4",
+        "istanbul": "~0.4.5",
+        "is-my-json-valid": "^2.20.0",
+        "js-yaml": "^3.13.1",
+        "supertest": "^4.0.2",
+        "swagger-parser": "^8.0.4"
+    },
+    "scripts": {
+        "test": "tape 'tests/**/*.js'",
+        "cover": "istanbul cover tape -- 'tests/**/*.js'",
+        "lint": "eslint .",
+        "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
+    },
+    "generator-swaggerize": {
+        "version": "4.1.0"
+    },
+    "main": "./server"
+}
