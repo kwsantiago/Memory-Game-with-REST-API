@@ -10,11 +10,11 @@ This folder contains the completed front-end code for Part 2 of this [guide](htt
 
 ## To run the sample:
 
- 1. Copy down the parent folder *Single-Page-App-with-REST-API* for both the backend and frontend samples.
+ 1. Copy down the parent folder *Memory-Game-with-REST-API* for both the backend and frontend samples.
 
  2. Follow the README directions in the [.\backend](..\backend\README.md) folder to start running the REST API service (on [http://localhost:8000/](http://localhost:8000/)).
  
- 3. Open your favorite shell to the *.\frontend\Final* subfolder.
+ 3. Open your favorite shell to the *.Frontend -- MemoryGame* subfolder.
 
  4. Run `npm install` to install the dependencies.
  
